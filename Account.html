@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/Style-Account.css">
+    <title> Account</title>
+    
+
+</head>
+<body>
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">El Pueblo Manila</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="Portal.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="Account.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Account</span>
+       </a>
+       <span class="tooltip">Account</span>
+     </li>
+     <li>
+       <a href="Billing.html">
+        <i class='bx bxs-bolt'></i>
+         <span class="links_name">Billing</span>
+       </a>
+       <span class="tooltip">Billing</span>
+     </li>
+     <li>
+       <a href="Maintenance.html">
+        <i class='bx bxs-traffic-barrier'></i>
+         <span class="links_name">Maintenance</span>
+       </a>
+       <span class="tooltip">Maintenance</span>
+     </li>
+     <li>
+       <a href="Requests.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Requests</span>
+       </a>
+       <span class="tooltip">Requests</span>
+     </li>
+     <li>
+       <a href="Settings.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="name">Juan Dela Cruz</div>
+             <div class="job">Resident</div>
+           </div>
+         </div>
+         <a href="Login.html">
+          <i class='bx bx-log-out' id="log_out" ></i>
+        </a>
+     </li>
+    </ul>
+  </div>
+  
+  <section class="home-section">
+      <div class="text">Account</div>
+
+        <!--Profile-->
+
+      <div class="Profile">
+        <div class="container rounded bg-white mt-1 mb-5">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Juan Dela Cruz</span><span class="text-black-50">juandelacruz@gmail.com</span><span> </span></div>
+                </div>
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Profile Settings</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="Juan" value=""></div>
+                            <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="Dela Cruz"></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="labels">Mobile Number</label><input type="text" class="form-control" placeholder="09XX-XXX-XXXX" value=""></div>
+                            <div class="col-md-12"><label class="labels">Telephone Number</label><input type="text" class="form-control" placeholder="Telephone Number" value=""></div>
+                            <div class="col-md-12"><label class="labels">Address</label><input type="text" class="form-control" placeholder="Address" value=""></div>
+                            <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="juandelacruz@gmail.com" value=""></div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="Philippines" value=""></div>
+                            <div class="col-md-6"><label class="labels">City</label><input type="text" class="form-control" value="" placeholder="Manila"></div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center experience"><span>Building Information</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Edit</span></div><br>
+                        <div class="col-md-12"><label class="labels">Building</label><input type="text" class="form-control" placeholder="ABC" value=""></div> <br>
+                        <div class="col-md-12"><label class="labels">Unit Number</label><input type="text" class="form-control" placeholder="Unit Number" value=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+  </section>
+
+  <!---Script for Side Panel-->
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+  
+    closeBtn.addEventListener("click", ()=>{
+      sidebar.classList.toggle("open");
+      menuBtnChange();
+    });
+  
+    searchBtn.addEventListener("click", ()=>{ 
+      sidebar.classList.toggle("open");
+      menuBtnChange(); 
+    });
+  
+  
+    function menuBtnChange() {
+     if(sidebar.classList.contains("open")){
+       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+     }else {
+       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+     }
+    }
+  </script>
+
+
+  </div>
+
+
+</body>
+</html>
